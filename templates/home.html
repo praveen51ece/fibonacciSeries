@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Fibonacci Series</title>
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+	<link href="/static/css/style.css" rel="stylesheet">
+	<script src="/static/js/fibonacci.js"></script>
+</head>
+<body>
+<!--Pulling Awesome Font -->
+<form name="fibonacci-form" id="fibonacci-form" >
+	<div class="container">
+        <div class="col-md-12">
+            <div class="form-style">
+            	<h3>Fibonacci Series</h3>
+	            <h4>Enter How Many Terms You Want ?</h4>
+	            <input type="text" id="terms" class="form-control" name ="nterms" placeholder="Enter Terms" onkeypress="return isNumber(event)" /><br>
+	            <span id="error-message"></span>
+	            </br>
+	            <label id="result" value="" class="form-control" style="background-color: white;" disabled="true">Result ? Click To Submit!</label>
+	            </br></br>
+	            <label id="time_div" class="form-control" style="background-color: white; display: none;">Total time taken is <span id="time_taken"></span> sec</label>
+	            </br></br>
+	            <div class="wrapper">
+		            <span class="">     
+		            	<a lass="btn btn-primary" style="cursor:pointer;" onclick="Validate();">Submit</a>
+		            </span>
+	            </div>
+            </div>
+        </div>
+	</div>
+</form>
+</body>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+</html>
